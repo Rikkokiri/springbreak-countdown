@@ -21,10 +21,10 @@ html, body {
 #quote {
   width: 100%;
   position: absolute;
-  top: 20%;
-  -webkit-transform: translateY(-20%);
-  -moz-transform: translateY(-20%);
-  transform: translateY(-20%);
+  top: 15%;
+  -webkit-transform: translateY(-15%);
+  -moz-transform: translateY(-15%);
+  transform: translateY(-15%);
 
   text-align: center;
   color: white;
