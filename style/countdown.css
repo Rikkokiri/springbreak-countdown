@@ -2,6 +2,13 @@
 * @author Pilvi Rajala (piraj)
 */
 
+html {
+  background-image: url('../resources/landscape.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 html, body {
   /*padding: 0;
   margin: 0;*/
@@ -27,26 +34,28 @@ main {
 
 }
 
-#countdown-div > div {
+.countdown-item {
   text-align: center;
 
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   padding: 10px;
   margin: 8px;
-  background-color: navy;
+
+  background: rgba(175,102,102,0.5); /* rgba(153,102,102,0.5); rgba(200,12,50,0.5);*/
+
   color: white;
   border-radius: 50%;
   font-family: 'Amatic SC', cursive;
 
 }
 
-#countdown-div > div > span {
+.countdown-number { /* Span where countdown numbers are placed */
   display: inline-block;
   line-height: 60px;
-  padding-top: 15px;
-  font-size: 45px;
+  padding-top: 25px;
+  font-size: 50px;
   text-align: center;
   font-weight: bolder;
 }
