@@ -19,7 +19,7 @@
       // Set a valid end date for the counter
       var countdownEnd = '2017-03-04T16:50';
       //Call startCountdown(countdownID, endtime);
-      startCountdown(countdownEnd, "countdown-div", "countdown-days", "countdown-hours", "countdown-minutes", "countdown-seconds");
+      startCountdown(countdownEnd, "countdown-div", "countdown-weeks", "countdown-days", "countdown-hours", "countdown-minutes", "countdown-seconds");
 
     }
 
@@ -34,28 +34,35 @@
 
       <div class="countdown-item">
 
-        <span id="countdown-days"></span>
-        <div class="time-unit">DAYS</div>
-        
+        <span id="countdown-weeks" class="countdown-number"></span>
+        <div class="time-unit">WEEKS</div>
+
       </div>
 
       <div class="countdown-item">
 
-        <span id="countdown-hours"></span>
+        <span id="countdown-days" class="countdown-number"></span>
+        <div class="time-unit">DAYS</div>
+
+      </div>
+
+      <div class="countdown-item">
+
+        <span id="countdown-hours" class="countdown-number" ></span>
         <div class="time-unit">HOURS</div>
 
       </div>
 
       <div class="countdown-item">
 
-        <span id="countdown-minutes"></span>
+        <span id="countdown-minutes" class="countdown-number" ></span>
         <div class="time-unit">MINUTES</div>
 
       </div>
 
       <div class="countdown-item">
 
-        <span id="countdown-seconds"></span>
+        <span id="countdown-seconds" class="countdown-number" ></span>
         <div class="time-unit">SECONDS</div>
 
       </div>
