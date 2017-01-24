@@ -15,14 +15,23 @@ html, body {
   /*padding: 0;
   margin: 0;*/
   height: 100%;
+  overflow: auto;  /* Prevent "white bounce" */
 }
 
-main {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+#quote {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  transform: translateY(-20%);
 
-  overflow: auto; /* Prevent "white bounce" */
+  text-align: center;
+  color: white;
+  /*color: rgba(0,0,0,0);*/
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* The countdown timer */
@@ -47,7 +56,8 @@ main {
   padding: 10px;
   margin: 8px;
 
-  background: rgba(175,102,102,0.5); /* rgba(153,102,102,0.5); rgba(200,12,50,0.5);*/
+  background: rgba(190,100,100,0.5); /*rgba(175,102,102,0.5); rgba(153,102,102,0.5); rgba(200,12,50,0.5);*/
+  /*background: rgba(0,0,0,0.5);*/
 
   color: white;
   border-radius: 50%;

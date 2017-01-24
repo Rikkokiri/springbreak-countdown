@@ -17,8 +17,8 @@
 
     function init(){
       // Set a valid end date for the counter
-      var countdownEnd = '2017-03-04T16:50';
-      //Call startCountdown(countdownID, endtime);
+      var countdownEnd = '2017-03-04 16:50 GMT-0600';
+      //Call startCountdown providing it the end time and the id values of elements used for displaying the weeks, days, hours, minutes and seconds
       startCountdown(countdownEnd, "countdown-div", "countdown-weeks", "countdown-days", "countdown-hours", "countdown-minutes", "countdown-seconds");
 
     }
@@ -29,6 +29,11 @@
 
 </head>
 <body>
+
+    <div id="quote">
+      <!-- The quote of the day is placed here -->
+      <p>Distance isn't an issue, because in the end, I have you.</p>
+    </div>
 
     <div id="countdown-div">
 

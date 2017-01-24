@@ -1,7 +1,7 @@
 function calculateRemainingTime(enddate){
 
     // Difference between the two days in milliseconds
-    var timeLeft = Date.parse(enddate) - Date.parse(new Date());
+    var timeLeft = Date.parse(enddate) - Date.parse(new Date().toUTCString());
 
     var weeks = Math.floor( (timeLeft) / (1000 * 60 * 60 * 24 * 7));
     var days = Math.floor( (timeLeft / (1000 * 60 * 60 * 24)) % 7); //milliseconds * seconds * minutes * hours
