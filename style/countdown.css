@@ -7,6 +7,8 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  overflow: hidden;  /* Prevent "white bounce" */
 }
 
 html, body {
@@ -19,6 +21,8 @@ main {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+
+  overflow: auto; /* Prevent "white bounce" */
 }
 
 /* The countdown timer */
