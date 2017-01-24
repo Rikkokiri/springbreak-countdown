@@ -3,6 +3,58 @@
 */
 
 html, body {
-  padding: 0;
-  margin: 0;
+  /*padding: 0;
+  margin: 0;*/
+  height: 100%;
+}
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The countdown timer */
+#countdown-div {
+  text-align: center;
+  /*margin-top: 25px;*/
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* Center div horizontally and vertically */
+
+}
+
+#countdown-div > div {
+  text-align: center;
+
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  margin: 8px;
+  background-color: navy;
+  color: white;
+  border-radius: 50%;
+  font-family: 'Amatic SC', cursive;
+
+}
+
+#countdown-div > div > span {
+  display: inline-block;
+  line-height: 60px;
+  padding-top: 15px;
+  font-size: 45px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.time-unit {
+  font-size: 23px;
+}
+
+#olympic-results {
+  font-size: 20px;
 }
