@@ -1,5 +1,9 @@
 function calculateRemainingTime(enddate){
 
+    var today = new Date().toUTCString();
+    var parsedDate = Date.parse(today);
+    var time = Date.parse(enddate);
+
     // Difference between the two days in milliseconds
     var timeLeft = Date.parse(enddate) - Date.parse(new Date().toUTCString());
 
@@ -23,24 +27,15 @@ function calculateRemainingTime(enddate){
 
 function startCountdown(endtime, countdownID, weeksID, daysID, hoursID, minutesID, secondsID) {
 
-    //Get the element where the countdown is located
-    var countdownElement = document.getElementById(countdownID);
-
-    var weekSpan = document.getElementById(weeksID);
-    var daySpan = document.getElementById(daysID);
-    var hourSpan = document.getElementById(hoursID);
-    var minuteSpan = document.getElementById(minutesID);
-    var secondSpan = document.getElementById(secondsID);
-
     function updateCountdown(){
 
       var timeInformation = calculateRemainingTime(endtime);
 
-      weekSpan.innerHTML = timeInformation.weeks;
-      daySpan.innerHTML = timeInformation.days;
-      hourSpan.innerHTML = ('0' + timeInformation.hours).slice(-2);
-      minuteSpan.innerHTML = ('0' + timeInformation.minutes).slice(-2);
-      secondSpan.innerHTML = ('0' + timeInformation.seconds).slice(-2);
+      $("#" + weeksID).text(timeInformation.weeks);
+      $("#" + daysID).text(timeInformation.days);
+      $("#" + hoursID).text(("0" + timeInformation.hours).slice(-2));
+      $("#" + minutesID).text(("0" + timeInformation.minutes).slice(-2));
+      $("#" + secondsID).text(("0" + timeInformation.seconds).slice(-2));
 
       //If the end time has been reached, stop the countdown
       if( timeInformation.timeLeft <= 0){
