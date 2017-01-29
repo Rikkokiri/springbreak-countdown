@@ -40,6 +40,11 @@ function startCountdown(endtime, countdownID, weeksID, daysID, hoursID, minutesI
       //If the end time has been reached, stop the countdown
       if( timeInformation.timeLeft <= 0){
         clearInterval(countdownInterval);
+        $("#" + weeksID).text("0");
+        $("#" + daysID).text("0");
+        $("#" + hoursID).text("0");
+        $("#" + minutesID).text("0");
+        $("#" + secondsID).text("0");
       }
     }
 
